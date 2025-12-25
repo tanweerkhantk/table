@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+
+        body{
+            background: linear-gradient(120deg, red, blue);
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /* background-color: rgb(236, 236, 236); */
+            flex-direction: column;
+        }
+
+        .table-content{
+            width: 80%;
+            flex-direction: column;
+            background-color: white;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            text-align: center;
+            background-color: rgb(183, 248, 183);
+            color: rgb(3, 73, 13);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table td{
+            text-align: center;
+            padding: 15px;
+        }
+
+        .title{
+            background-color: rgb(3, 73, 13);
+            color: white;
+        }
+
+        .research{
+            background-color: rgb(183, 248, 183);
+        }
+
+        .preparation{
+            background-color: rgb(183, 248, 183);
+        }
+
+        .day{
+            background-color: lightgreen;
+        }
+
+        .time{
+            background-color: skyblue;
+        }
+
+        .title2{
+            background: #05e4e4;
+        }
+
+        .tutorial-free{
+            background-color: rgb(78, 2, 129);
+        }
+
+        .number{
+            background-color: rgb(175, 250, 198);
+        }
+         
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="table-content">
+            <h1>Complex Table Using HTML & CSS</h1>
+            <table border="1">
+            <tr>
+                <td></td>
+                <td></td>
+                <td colspan="3" class="title" >Morning</td>
+                <td class="title">Lunch</td>
+                <td colspan="4" class="title">Afternoon</td>
+                <td colspan="3" class="title">Evening</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td class="time">9-<br>10<br>AM</td>
+                <td class="time">10-<br>11<br>AM</td>
+                <td class="time">11-<br>12<br>PM</td>
+                <td class="time">1-2 <br>PM</td>
+                <td class="time">2<br>3<br>PM</b></td>
+                <td class="time">3-<br>4<br>PM</td>
+                <td class="time">4-<br>5<br>PM</td>
+                <td class="time">5-6 PM</td>
+                <td class="time">6-<br>7<br>PM</td>
+                <td class="time">7-<br>8<br>PM</td>
+                <td class="time">8-9<br>PM</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="title">Work</td>
+                <td class="day"><br>Monday<br><br></td>
+                <td class="title2" colspan="3">Development Meeting</td>
+                <td></td>
+                <td class="title2" colspan="3">Client Meeting</td>
+                <td class="title2">Commute</td>
+                <td class="title2" colspan="3">Free</td>
+            </tr>
+            <tr>
+                <td class="day">Tuesday</td>
+                <td class="title" colspan="3">In Office</td>
+                <td></td>
+                <td class="title" colspan="7">In Office</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="title">Lecture</td>
+                <td class="day">Wednesday</td>
+                <td colspan="3" class="number">205</td>
+                <td></td>
+                <td colspan="7" class="preparation">Preparation</td>
+            </tr>
+            <tr>
+                <td class="day"><br>Thrusday<br><br></td>
+                <td colspan="3" class="number">200</td>
+                <td></td>
+                <td class="tutorial-free" colspan="3">Tutorials</td>
+                <td class="tutorial-free" colspan="4">Free</td>
+            </tr>
+            <tr>
+                <td class="title">Research</td>
+                <td class="day">Friday</td>
+                <td colspan="3" class="research">Research</td>
+                <td></td>
+                <td colspan="7" class="research">Research</td>
+            </tr>
+        </table>
+        </div>
+        
+    </div>
+</body>
+</html>
